@@ -4,7 +4,11 @@
 
 [Florin Popp _ 10 JavaScript Projects in 1 Hour - Coding Challenge 🔥](https://www.youtube.com/watch?v=8GPPJpiLqHk&t=2308s)
 
-1. Hambuger Button & Hidden Menu
+1. Hamburger Button & Hidden Menu
+  - button + hamburger icon
+  - menu > li > a -> hidden
+  - toggle on click
+  - animation
 
 2. Toast Notification
 
