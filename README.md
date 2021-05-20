@@ -60,3 +60,20 @@ close.addEventListener('click', () => {
   container.classList.remove('active');
 })
 ```
+
+5. Purple Heart Rain
+- heart css
+- falling animation
+- create heart
+- add class
+- add it to body
+- interval
+
+5. Background Change (random)
+- button w/ click
+- generate color
+- change bg color on click
+
+```
+return `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`
+```
