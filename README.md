@@ -43,3 +43,20 @@ function writeText() {
 }
 setInterval(writeText, 200);
 ```
+
+4. Pop up
+- button
+- click on button to activate popup
+- popup container
+- popup with text
+- close btn popup with click event
+
+```
+open.addEventListener('click', () => {
+  container.classList.add('active');
+})
+
+close.addEventListener('click', () => {
+  container.classList.remove('active');
+})
+```
