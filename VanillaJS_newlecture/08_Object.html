@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="divbox"></div>
+
+  
+  <script>
+    
+    var exam = new Object()
+    exam.kor = 98
+    exam.math = 90
+    exam.eng = 88
+
+    const exam_p = document.createElement('p')
+    exam_p.classList.add('exam')
+    //console.log(exam_p)
+    
+    // p_tag = document.getElementsByClassName('exam')
+    // console.log(p_tag[0])
+    exam_p.innerText = JSON.stringify(exam)
+    
+    //const divbox = document.createElement('div')
+    //console.log(divbox)
+    divbox.appendChild(exam_p)
+    //console.log(exam)
+  </script>
+</body>
+</html>

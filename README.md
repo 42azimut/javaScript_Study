@@ -9,6 +9,11 @@
   - menu > li > a -> hidden
   - toggle on click
   - animation
+  ```
+  클래스가 존재하는지 체크, 없으면 더하고 ,있으면 제거
+  nav.classList.toggle('act')
+
+  ```
 
 2. Toast Notification
   - toast container floating
