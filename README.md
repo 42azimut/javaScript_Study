@@ -11,6 +11,20 @@
   - animation
 
 2. Toast Notification
-
+  - toast container floating
+  - toast design
+  - button
+  - click show random toast message
+  ```
+  - document.getElementyById(#id)
+  - document.createElement(div)
+  - var.classList.add('toast')
+  - var.innerText = 'my text to put something in';
+  - var.appendChild(child)  //var 안에 추가
+  ```
 3. Auto Write Text
+  - text
+  - index
+  - show text based on index
+  - increment index
 

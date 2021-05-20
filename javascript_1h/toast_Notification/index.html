@@ -11,5 +11,25 @@
 <body>
   <div id="container"></div>
   <button id='btn'>Click me Pretty please</button>
+
+  <div id='test'>test</div>
+  <script>
+
+    
+    //활용! 
+    const test = document.getElementById('test')
+    test.addEventListener('click', () => {
+      //const a = document.createElement('div')
+      const b = document.createElement('p')
+      test.appendChild(b)
+      test.classList.add('test_class')
+      b.classList.add('test_p');
+      b.innerText = '들어가냐??';
+    
+      setTimeout(() => {
+        test.remove();
+      }, 3000)
+})
+  </script>
 </body>
 </html>
