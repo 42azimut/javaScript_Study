@@ -83,4 +83,7 @@ return `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`
 - css for dark mode
 - toggle
 - toggle event
-
+```
+document.body.classList.toggle('dark', 
+    e.target.checked)
+```
