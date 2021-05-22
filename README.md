@@ -69,7 +69,7 @@ close.addEventListener('click', () => {
 - add it to body
 - interval
 
-5. Background Change (random)
+6. Background Change (random)
 - button w/ click
 - generate color
 - change bg color on click
@@ -77,3 +77,10 @@ close.addEventListener('click', () => {
 ```
 return `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`
 ```
+
+7. Dark Mode Toggle
+- text
+- css for dark mode
+- toggle
+- toggle event
+
