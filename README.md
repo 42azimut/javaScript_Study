@@ -87,3 +87,37 @@ return `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`
 document.body.classList.toggle('dark', 
     e.target.checked)
 ```
+
+8. img Carousel
+- 3/4 images
+- carousel container
+- images with fixed width and hegith
+- index
+- automatic swtich index and update
+
+9. Sound Board
+- sounds (HAVE THESE READY SIR)
+- array with names
+- loop over array
+- create buttons w/ text
+- play sound on click
+
+10. Zoom effect
+- image
+- track mouse movement
+- set transform origin on hover
+
+```
+container.addEventListener('mousemove', (e) => {
+  const x = e.clientX - e.target.offsetLeft;
+  const y = e.clientY - e.target.offsetTop;
+  console.log(e.clientX);
+  img.style.transformOrigin = `${x}px ${y}px`;
+  img.style.transform = "scale(2)";
+})
+
+container.addEventListener('mouseleave', () => {
+  img.style.transformOrigin = 'center center';
+  img.style.transform = 'scale(1)';
+})
+```
