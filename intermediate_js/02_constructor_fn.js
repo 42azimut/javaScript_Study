@@ -20,7 +20,6 @@ function User(name, age) {
   this.age = age;
   //return this;  //없어도 됨
 }
-
 new User();
 
 //생성자함수에 메서드 추가
