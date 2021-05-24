@@ -1,7 +1,7 @@
 // property key : 문자형
 
 const obj = {
-  1: '1ㅇㅣㄴ데요',
+  1: '1 인데요',
   false: '거짓',
 };
 obj1 = Object.keys(obj);

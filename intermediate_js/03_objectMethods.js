@@ -72,3 +72,4 @@ const entries_Obj = Object.entries(user4);   // 배열을 변수에 담음. 객�
 
 // Object.fromEntires()  : 키/값 배열을 객체로 반환
 console.log(Object.fromEntries(entries_Obj));    //{ name: 'pretty', age: 23, gender: 'female' }
+
