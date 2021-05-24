@@ -86,7 +86,7 @@ console.log(result6);
 let arr7 =[1,2,3,4,5];
 console.log(arr7.reverse());  //[ 5, 4, 3, 2, 1 ]
 
-// arr.map(fn)  // 함수를 인자로 받아 특정 기능을 실행하고 새로운 배열을 반환
+// arr.map(fn)  // 함수를 인자로 받아 특정 기능을 실행하고 "새로운" 배열을 반환
 let userList2 = [
   { name: 'Mike', age: 34 },
   { name: 'Jane', age: 45 },

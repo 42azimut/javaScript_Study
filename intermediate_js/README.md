@@ -84,10 +84,10 @@ console.log(Math.round(userRate * 100) / 100);
 ## 06. String methods
 ```
 // str.indexOf(text)   //텍스트 첫번째 문자열의 위치값 반환
-//str.slice(n, m) : n 시작점, m 까지 문자열 반환
-//str.substring(n, m)  : n과 m사이 문자열 반환  
-//str.substr(n, m)  : n부터 시작, m 개를 반환한다
-//str.trim() : 앞뒤 공백 문자 제거
+// str.slice(n, m) : n 시작점, m 까지 문자열 반환
+// str.substring(n, m)  : n과 m사이 문자열 반환  
+// str.substr(n, m)  : n부터 시작, m 개를 반환한다
+// str.trim() : 앞뒤 공백 문자 제거
 // "a".codePointAt(0);    :문자를 아스키 코드 숫자로 반환
 // String.fromCodePoint(97)  : 숫자 아스키 코드 97을 해당 문자로 반환
 
@@ -96,3 +96,64 @@ console.log(Math.round(userRate * 100) / 100);
 - if(str.indexOf('cola') > -1) {}
 - if(str.includes('cola')) {} 
 ```
+
+07. Array methods
+- arr.splice(n, m, x, y)  : 특정 요소 지우고(n ~ m) x, y 추가
+- arr.splice(1,2)  : n부터 m 까지 삭제된 요소 반환
+- arr.concat(arr2, arr3 ..)  : 합쳐서 새배열 반환
+- arr.forEach(fn(item, index, arr) => {}) : 배열반복 중요~ 함수를 인자로받아 반복한다.
+```
+let users = ['Mike', 'Tom', 'JKane'];
+users.forEach((name, index) => {
+  console.log(`${index + 1} - ${name}`);
+});
+```
+- arr.idnexOf()  / arr.lastIndexOf()
+- arr.includes() : 포함하는지만 확인 (true, false)
+- arr.find(fn)  / arr.findIndex(fn) 
+```
+const result3 = userList.findIndex((user) => {
+if (user.age <= 19) {
+    return true;;
+  }
+  return false;
+});
+```
+
+- arr.filter(fn)   : 만족하는 모든 요소를 배열로 반환
+```
+let arr6 = [1,2,3,4,5];
+const result6 = arr6.filter((item) => {
+  return item % 2 === 0;
+});
+console.log(result6);
+```
+
+- arr.reverse()  : 역순으로 재정렬
+- arr.map(fn)  // 함수를 인자로 받아 특정 기능을 실행하고 **새로운 배열**을 반환
+```
+let userList2 = [
+  { name: 'Mike', age: 34 },
+  { name: 'Jane', age: 45 },
+  { name: 'Tom', age: 14 },
+]; 
+
+let newUserList = userList2.map((user, index) => {
+  console.log('index:', index);
+  return Object.assign({}, {
+    idx: index + 1, 
+    isAdult: user.age > 19,
+  }, user);
+});
+console.log(newUserList);
+```
+
+- arr.split(",")   // (문자열을 받아  쉼표기준으로 분리 배열로 반환)
+- arr.join("-")  // 원소를 한개로 - 연결
+
+-  Array.isArray()  : typeof ... 는 기본적으로 객체와, 배열은 모두 객체의 형태이다  따라서 위 메서드를 이용하여 배열인지 확인 할수 있다. 
+
+- push() :뒤에 삽입
+- pop() : 뒤에 삭제
+- unshift() :앞에 삽입
+- shift() : 앞에 삭제
