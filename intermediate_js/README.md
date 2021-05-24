@@ -80,3 +80,19 @@ console.log(Math.round(userRate * 100) / 100);
 - Math.pow(2, 10);   // 2의 10승
 
 - Math.sqrt(16);   //루트 근!
+
+## 06. String methods
+```
+// str.indexOf(text)   //텍스트 첫번째 문자열의 위치값 반환
+//str.slice(n, m) : n 시작점, m 까지 문자열 반환
+//str.substring(n, m)  : n과 m사이 문자열 반환  
+//str.substr(n, m)  : n부터 시작, m 개를 반환한다
+//str.trim() : 앞뒤 공백 문자 제거
+// "a".codePointAt(0);    :문자를 아스키 코드 숫자로 반환
+// String.fromCodePoint(97)  : 숫자 아스키 코드 97을 해당 문자로 반환
+
+//  위 indexOf 대신 includes 사용! 
+// includes  --> 트루 , 폴스만 판단.
+- if(str.indexOf('cola') > -1) {}
+- if(str.includes('cola')) {} 
+```
