@@ -88,7 +88,7 @@ prevBtn.addEventListener('click', () => {
 randomBtn.addEventListener('click', () => {
   currentItem = Math.floor(Math.random() * reviews.length)
   //console.log(currentItem);
-  // console.log(Math.random());
-  console.log(Math.floor());
+  // console.log(Math.random());  // 0~1이내 랜덤소수
+  // console.log(Math.floor(3.221312));   //소수점 버림
   showPerson(currentItem);
 })
