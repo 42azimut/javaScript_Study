@@ -42,7 +42,7 @@ console.log(result);
 const result1 = arr3.reduce((acc, cur) => {
   console.log(acc, cur);
   return acc + cur;
-}, 0);
+}, 0);  //0 으로 초기값 설정
 console.log(result1);
 
 

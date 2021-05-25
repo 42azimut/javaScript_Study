@@ -97,7 +97,7 @@ console.log(Math.round(userRate * 100) / 100);
 - if(str.includes('cola')) {} 
 ```
 
-07. Array methods
+## 07. Array methods
 - arr.splice(n, m, x, y)  : 특정 요소 지우고(n ~ m) x, y 추가
 - arr.splice(1,2)  : n부터 m 까지 삭제된 요소 반환
 - arr.concat(arr2, arr3 ..)  : 합쳐서 새배열 반환
@@ -157,3 +157,10 @@ console.log(newUserList);
 - pop() : 뒤에 삭제
 - unshift() :앞에 삽입
 - shift() : 앞에 삭제
+
+## 08. arr.sort(),   reduce(callback, acc(prev), cur, index, array)
+
+- Lodash  :  유용한 기능을 모아둔 라이브러리
+`_.sortBy(arr);`    // 숫자, 문자 소트 가능! 
+
+- reduce(fn, acc(prev), cur, idx, array )   //acc 누적값
