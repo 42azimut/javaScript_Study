@@ -34,7 +34,7 @@ console.log(u1, u2);
 // 객체 구조 분해
 let user4 = {name4: 'Azimut', age4: 23};
 let {name4, age4} = user4;  // 객체 키 순서 상관 없음
-let { name4: userName, age4: userAge} = user4;
+let { name4: userName, age4: userAge} = user4   //키 변경;
 //let {name4, age4, gende='male'} = user4;
 
 console.log(userName);

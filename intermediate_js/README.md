@@ -171,3 +171,49 @@ console.log(newUserList);
 
 - 배열 구조 분해 : 바꿔치기  swap
   `[x, y] =[y, x];`
+
+
+## 10. Rest parameter, Spread syntax
+```
+function showName (...names) {
+  console.log(names);
+}
+showName('js', 'tom', 'kor')
+```
+
+```
+function add(...numbers) {
+  let res = 0;
+  numbers.forEach((num) => (res += num));
+  console.log(res);
+}
+```
+```
+function add_reduce(...numbers) {
+  let res=0;
+  numbers.reduce((prev, cur) => prev + cur)
+  console.log(res)
+}
+```
+
+```
+function User(name, age,  ...skills) {
+  this.name = name;
+  this.age = age;
+  this.skills = skills;
+}
+
+const user1 = new User('Moike', 23, 'React', 'NodeJs');
+const user2 = new User('Jane', 32, 'Tensor', 'CSs');
+const user3 = new User('Tomeson', 19, 'Python', ['html', 'css']);
+```
+
+```
+//전개 구문 하면 쉽다
+user_1 = {
+  ...user_1,
+  ...info,
+  skills: [...fe, ...lang]
+  };
+
+```
