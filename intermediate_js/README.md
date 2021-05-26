@@ -164,3 +164,10 @@ console.log(newUserList);
 `_.sortBy(arr);`    // 숫자, 문자 소트 가능! 
 
 - reduce(fn, acc(prev), cur, idx, array )   //acc 누적값
+
+## 09. 구조분해 할당 Destructuring assignment
+
+- 구조분해 할당 구문은 배열이나 객체의 속성을 분해해서 그 값을 그 변수에 담을 수 있게 하는 표현식
+
+- 배열 구조 분해 : 바꿔치기  swap
+  `[x, y] =[y, x];`
